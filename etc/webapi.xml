@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route url="/V1/aiti-responsibleuseradminui/productresponsibleuseradminui" method="POST">
+		<service class="Aiti\Responsibleuseradminui\Api\ProductResponsibleUserAdminUiRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi_save"/>
+		</resources>
+	</route>
+	<route url="/V1/aiti-responsibleuseradminui/productresponsibleuseradminui/search" method="GET">
+		<service class="Aiti\Responsibleuseradminui\Api\ProductResponsibleUserAdminUiRepositoryInterface" method="getList"/>
+		<resources>
+			<resource ref="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi_view"/>
+		</resources>
+	</route>
+	<route url="/V1/aiti-responsibleuseradminui/productresponsibleuseradminui/:productresponsibleuseradminuiId" method="GET">
+		<service class="Aiti\Responsibleuseradminui\Api\ProductResponsibleUserAdminUiRepositoryInterface" method="get"/>
+		<resources>
+			<resource ref="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi_view"/>
+		</resources>
+	</route>
+	<route url="/V1/aiti-responsibleuseradminui/productresponsibleuseradminui/:productresponsibleuseradminuiId" method="PUT">
+		<service class="Aiti\Responsibleuseradminui\Api\ProductResponsibleUserAdminUiRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi_update"/>
+		</resources>
+	</route>
+	<route url="/V1/aiti-responsibleuseradminui/productresponsibleuseradminui/:productresponsibleuseradminuiId" method="DELETE">
+		<service class="Aiti\Responsibleuseradminui\Api\ProductResponsibleUserAdminUiRepositoryInterface" method="deleteById"/>
+		<resources>
+			<resource ref="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi_delete"/>
+		</resources>
+	</route>
+</routes>
