@@ -3,11 +3,12 @@
 	<acl>
 		<resources>
 			<resource id="Magento_Backend::admin">
-				<resource id="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi" title="ProductResponsibleUserAdminUi" sortOrder="10">
-					<resource id="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi_save" title="Save ProductResponsibleUserAdminUi" sortOrder="10"/>
-					<resource id="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi_delete" title="Delete ProductResponsibleUserAdminUi" sortOrder="20"/>
-					<resource id="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi_update" title="Update ProductResponsibleUserAdminUi" sortOrder="30"/>
-					<resource id="Aiti_Responsibleuseradminui::ProductResponsibleUserAdminUi_view" title="View ProductResponsibleUserAdminUi" sortOrder="40"/>
+				<resource id="Aiti_ProductResponsibleUserAdminUi::responsible" title="responsible" sortOrder="10">
+					<resource id="Aiti_ProductResponsibleUserAdminUi::index_index" title="index index" sortOrder="10"/>
+					<resource id="Aiti_ProductResponsibleUserAdminUi::responsible_save" title="Save responsible" sortOrder="10"/>
+					<resource id="Aiti_ProductResponsibleUserAdminUi::responsible_delete" title="Delete responsible" sortOrder="20"/>
+					<resource id="Aiti_ProductResponsibleUserAdminUi::responsible_update" title="Update responsible" sortOrder="30"/>
+					<resource id="Aiti_ProductResponsibleUserAdminUi::responsible_view" title="View responsible" sortOrder="40"/>
 				</resource>
 			</resource>
 		</resources>

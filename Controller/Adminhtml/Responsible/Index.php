@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Aiti\Responsibleuseradminui\Controller\Adminhtml\ProductResponsibleUserAdminUi;
+namespace Aiti\ProductResponsibleUserAdminUi\Controller\Adminhtml\Responsible;
 
 class Index extends \Magento\Backend\App\Action
 {
@@ -34,7 +34,7 @@ class Index extends \Magento\Backend\App\Action
     public function execute()
     {
         $resultPage = $this->resultPageFactory->create();
-            $resultPage->getConfig()->getTitle()->prepend(__("ProductResponsibleUserAdminUi"));
+            $resultPage->getConfig()->getTitle()->prepend(__("responsible"));
             return $resultPage;
     }
 }

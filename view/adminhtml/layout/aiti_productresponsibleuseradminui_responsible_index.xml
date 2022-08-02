@@ -3,7 +3,7 @@
 	<update handle="styles"/>
 	<body>
 		<referenceContainer name="content">
-			<uiComponent name="aiti_responsibleuseradminui_productresponsibleuseradminui_listing"/>
+			<uiComponent name="aiti_productresponsibleuseradminui_responsible_listing"/>
 		</referenceContainer>
 	</body>
 </page>

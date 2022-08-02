@@ -1,5 +1,5 @@
 {
-    "name": "aiti/module-responsibleuseradminui",
+    "name": "aiti/module-productresponsibleuseradminui",
     "description": "asdf",
     "type": "magento2-module",
     "license": "GPL-3.0",
@@ -20,7 +20,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Aiti\\Responsibleuseradminui\\": ""
+            "Aiti\\ProductResponsibleUserAdminUi\\": ""
         }
     }
 }

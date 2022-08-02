@@ -1,6 +1,8 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
 	<menu>
-		<add id="Aiti_Responsibleuseradminui::aiti_responsibleuseradminui" title="Responsible users" module="Aiti_Responsibleuseradminui" sortOrder="9999" resource="Magento_Backend::content" parent="Magento_User::system_acl" action="productresponsibleuser/grid"/>
+        <add id="Aiti_ProductResponsibleUserAdminUi::responsible_users" title="Product responsible user" translate="title"
+             module="Aiti_ProductResponsibleUserAdminUi" parent="Magento_User::system_acl" sortOrder="50"
+             action="responsible" resource="Aiti_ProductResponsibleUserAdminUi::productresponsibleuseradminui_grid"/>
 	</menu>
 </config>
