@@ -7,11 +7,12 @@ declare(strict_types=1);
 
 namespace Aiti\ProductResponsibleUserAdminUi\Controller\Adminhtml\Index;
 
+use Magento\Backend\App\Action;
+use Magento\Backend\App\Action\Context;
 use Magento\Framework\App\Action\HttpGetActionInterface;
-use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\View\Result\PageFactory;
 
-class Index implements HttpGetActionInterface
+class Index extends Action implements HttpGetActionInterface
 {
 
     /**
@@ -19,24 +20,17 @@ class Index implements HttpGetActionInterface
      */
     protected $resultPageFactory;
 
-    /**
-     * Constructor
-     *
-     * @param PageFactory $resultPageFactory
-     */
-    public function __construct(PageFactory $resultPageFactory)
+    public function __construct(Context $context, PageFactory $resultPageFactory)
     {
+        parent::__construct($context);
         $this->resultPageFactory = $resultPageFactory;
     }
 
-    /**
-     * Execute view action
-     *
-     * @return ResultInterface
-     */
     public function execute()
     {
-        return $this->resultPageFactory->create();
+        $resultPage = $this->resultPageFactory->create();
+        $resultPage->getConfig()->getTitle()->prepend((__('Responsible users')));
+
+        return $resultPage;
     }
 }
-
